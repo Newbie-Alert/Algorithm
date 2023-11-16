@@ -6,15 +6,11 @@ https://school.programmers.co.kr/learn/courses/30/lessons/86051
 // }
 
 
-function solution(numbers) {
-  let sorted = numbers.sort((a, b) => a - b)
-  let answer = 0;
 
-  for (let i = 0; i < 9; i++) {
-    if (sorted[i + 1] - sorted[i] != 1) {
-      answer += sorted[i] + 1
-      console.log(answer);
-    }
+function solution(numbers) {
+  let answer = 0;
+  for (let i = 0; i < 10; i++) {
+    if (!numbers.includes(i)) answer += i
   }
   return answer
 }
