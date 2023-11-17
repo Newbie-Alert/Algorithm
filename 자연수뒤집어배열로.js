@@ -25,5 +25,5 @@ console.log(arrrr.length); // 5 배열 총 길이
 console.log(arrrr.length - 1); // 4 배열 가장 뒤의 인덱스
 
 let num = 12345
-console.log(String(num).length);
-console.log(num.length);
+console.log(String(num).length); // 5
+console.log(num.length); // undefined
